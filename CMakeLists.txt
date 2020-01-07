@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 project(Studing LANGUAGES CXX)
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 SET(CMAKE_LIBRARY_OUTPUT_DIRECTORY
@@ -22,9 +22,8 @@ SET (CMAKE_ARCHIVE_OUTPUT_DIRECTORY
 enable_testing()
 
 
-
-add_subdirectory(src  build/src)
-add_subdirectory(test build/test)
+add_subdirectory(algolib  build/algolib)
+add_subdirectory(test build/unit_test)
 
 
 #add_executable(foo main.cpp)
